@@ -11,8 +11,24 @@
     
     <div class="wrapper">
         <header class="header">
+            
             <nav class="navigation">
-    
+                <span class="hamburger">
+                    <span class="hamburger__item hamburger__first"></span>
+                    <span class="hamburger__item hamburger__second"></span>
+                    <span class="hamburger__item hamburger__third"></span>
+                </span>
+                <ul class="navigation__list">
+                    <li><a href="#">Main Page</a></li>
+                    <li><a href="#/cards">Action (set A)</a></li>
+                    <li><a href="#/cards">Action (set B)</a></li>
+                    <li><a href="#/cards">Weather</a></li>
+                    <li><a href="#/cards">Food</a></li>
+                    <li><a href="#/cards">Animal (set A)</a></li>
+                    <li><a href="#/cards">Animal (set B)</a></li>
+                    <li><a href="#/cards">Clothes</a></li>
+                    <li><a href="#/cards">Emotions</a></li>
+                </ul>
             </nav>
             <label class="switch ">
                 <input type="checkbox" class="switch-checkbox" checked>
@@ -21,12 +37,28 @@
             </label>
         </header>
         
-        <div class="cards-layout main-cards">
-            <a href="#/cards" class="main-card">
-                <img src="" alt="" class="main-card__item">
+        <div class="cards-layout main-cards play">
+            <a href="#/cards" class="main-card main-card-play">
+                <img src="laugh.jpg" alt="" class="main-card__image">
+                Action (set A)
             </a>
         </div>
 
+
+        <div class="cards-layout word-cards">
+            <div href="#/cards" class="">
+                <div class="word-card">
+                    <img src="laugh.jpg" alt="" class="word-card__image">
+                    <p class="word-card__header">water</p> 
+                    <img src="laugh.jpg" alt="" class="word-card__reverse">
+                </div>
+                <div class="word-card word-card-translate hidden">
+                    <img src="laugh.jpg" alt="" class="word-card__image">
+                    <p class="word-card__header">вода</p> 
+                </div>
+            </div>
+        </div>
+ 
     </div>
     
 </body>

@@ -1,0 +1,27 @@
+.hamburger {
+    @include box-size($height: 22px, $width: 40px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    cursor: pointer;
+
+    &__item {
+        display: inline-block;
+        @include box-size($height: 4px, $width: 35px);
+        border-radius: 4px;
+        background-color: #7028e4;
+    }
+}
+
+.hamburger-active {
+    cursor: pointer;
+    .hamburger__first {
+        @include transform-rotate ($rotate: 30deg, $origin: left);
+    }
+    .hamburger__second {
+        display: none;
+    }
+    .hamburger__third {
+        @include transform-rotate ($rotate: -30deg, $origin: left);
+    }
+}

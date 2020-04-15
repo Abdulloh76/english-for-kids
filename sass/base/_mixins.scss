@@ -8,3 +8,8 @@
     height: $height;
     width: $width;
 } 
+
+@mixin transform-rotate ($rotate, $origin) {
+    transform: rotate($rotate);
+    transform-origin: $origin;
+}

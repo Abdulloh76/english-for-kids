@@ -12,6 +12,14 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
 }
 
+.wrapper {
+  margin: 10px auto;
+}
+
+.hidden {
+  display: none;
+}
+
 .switch {
   display: inline-block;
   position: relative;
@@ -79,6 +87,103 @@ body {
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   background-color: #f9f9ff;
+}
+
+.hamburger {
+  height: 22px;
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  cursor: pointer;
+}
+.hamburger__item {
+  display: inline-block;
+  height: 4px;
+  width: 35px;
+  border-radius: 4px;
+  background-color: #7028e4;
+}
+
+.hamburger-active {
+  cursor: pointer;
+}
+.hamburger-active .hamburger__first {
+  transform: rotate(30deg);
+  transform-origin: left;
+}
+.hamburger-active .hamburger__second {
+  display: none;
+}
+.hamburger-active .hamburger__third {
+  transform: rotate(-30deg);
+  transform-origin: left;
+}
+
+.main-card {
+  height: 280px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 6px;
+  text-align: center;
+  background: linear-gradient(180deg, #7028e4, #e5b2ca 40%, #ffffff 0px, #ffffff 100%);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 30px;
+  transition: box-shadow 0.3s ease;
+}
+.main-card:hover {
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
+}
+.main-card__image {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+}
+.main-card-play {
+  background: linear-gradient(180deg, #92fe9d, #00c9ff 40%, #ffffff 0px, #ffffff 100%);
+}
+
+.word-card {
+  height: 250px;
+  width: 300px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  margin: 30px;
+  overflow: hidden;
+  border-radius: 3px;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+  /*& + &-translate {
+
+  }*/
+}
+.word-card:hover {
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
+}
+.word-card__image {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.word-card__header {
+  display: inline-block;
+  margin-top: 12px;
+}
+.word-card__reverse {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
