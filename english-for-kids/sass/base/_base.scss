@@ -11,9 +11,32 @@ body {
 }
 
 .wrapper {
+    width: 80%;
     margin: 10px auto;
 }
 
 .hidden {
-    display: none;
+    display: none !important; 
+}
+
+@media (max-width: 1280px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+@media (max-width: 1090px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+@media (max-width: 868px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+
+@media (max-width: 730px) {
+    .wrapper {
+        width: 80%;
+    }
 }
