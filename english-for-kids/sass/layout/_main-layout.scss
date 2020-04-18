@@ -1,0 +1,10 @@
+.header {
+    margin-top: 40px;
+    @include flex();
+}
+
+.cards-layout {
+    margin-top: 50px;
+    @include flex($justify: space-around);
+    flex-wrap: wrap;
+}

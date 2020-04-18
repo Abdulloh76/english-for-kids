@@ -1,0 +1,28 @@
+.navigation {
+    @include position(absolute, 0, -130vw);
+    @include box-size(100%, 400px);
+    @extend %train-gradient;
+    z-index: 1;
+    transition: all 1s ease;
+    font-size: 2rem;
+
+    &__item {
+        list-style: none;
+        margin-bottom: 15px;
+        a {
+            text-decoration: none;
+        }
+    }
+    
+    &__list {
+        width: 50%;
+        margin: auto;
+        margin-top: 150px;
+        .active {
+            text-decoration: underline;
+        }
+    }
+    &-play {
+        @extend %play-gradient;
+    }
+}
