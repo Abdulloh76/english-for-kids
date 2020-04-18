@@ -14,29 +14,28 @@
             left: 83px;
         }
         & ~ .switch-label {
-            background: linear-gradient(45deg, #7028e4, #e5b2ca);
+            @extend %train-gradient;
             &::before {
                 content: "TRAIN";
-                @include position($value:11px);
+                @include position($top: 11px, $left: 11px);
             }
         }
     }
     &-label {
-        @include position;
+        @include position();
         cursor: pointer;
         @include box-size($height: 40px, $width: 120px);
         border-radius: 5px;
         transition: all 0.3s ease;
-        background: linear-gradient(45deg, #92fe9d, #00c9ff);
+        @extend %play-gradient;
        
         &::before {
-            @include position($value: 11px);
-            left: 70px;
+            @include position($top: 11px, $left: 70px);
             content: "PLAY";
         }
     }
     &-handle {
-        @include position($value:3px);
+        @include position($top: 3px, $left: 3px);
         @include box-size($height: 34px, $width: 34px);
         cursor: pointer;
         transition: all 0.3s linear;
@@ -45,7 +44,7 @@
         box-shadow: -1px 1px 5px rgba(0,0,0,0.2);
         &::before {
             content: "";
-            @include position($value:10px);
+            @include position($top: 10px, $left: 10px);
             @include box-size($height: 15px, $width: 15px);
             box-shadow: inset  0 1px rgba(0,0,0,0.15);
             border-radius: 50%;

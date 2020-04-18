@@ -4,6 +4,8 @@
     flex-wrap: wrap;
     align-content: space-between;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 
     &__item {
         display: inline-block;
