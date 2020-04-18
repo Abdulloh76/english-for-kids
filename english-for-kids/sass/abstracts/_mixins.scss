@@ -1,0 +1,21 @@
+@mixin position($position:absolute, $top: 0, $left: 0) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
+@mixin box-size($height, $width) {
+    height: $height;
+    width: $width;
+} 
+
+@mixin transform-rotate ($rotate, $origin) {
+    transform: rotate($rotate);
+    transform-origin: $origin;
+}
+
+@mixin flex($justify: space-between, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
