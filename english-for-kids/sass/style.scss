@@ -1,9 +1,13 @@
 // Base
 @import "base/base";
-@import "base/mixins";
 
-
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/variables";
 
 @import "components/switch";
 @import "components/hamburger";
 @import "components/cads";
+
+@import "layout/navigation";
+@import "layout/main-layout";
