@@ -7,14 +7,6 @@
     "style": "sass --watch sass/style.scss sass/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Abdulloh76/english-for-kids.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Abdulloh76/english-for-kids/issues"
-  },
-  "homepage": "https://github.com/Abdulloh76/english-for-kids#readme"
+  "license": "ISC"
 }
