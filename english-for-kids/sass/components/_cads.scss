@@ -62,6 +62,14 @@
         
     }*/
 }
+.word-card-play {
+    .word-card__image {
+        @include box-size(100%, 100%);
+    }
+    .word-card__reverse {
+        display: none;
+    }
+}
 
 @media (max-width: 445px) {
     .main-card {
