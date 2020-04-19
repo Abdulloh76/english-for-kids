@@ -3,7 +3,7 @@
     @include box-size(100%, 400px);
     @extend %train-gradient;
     z-index: 1;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     font-size: 2rem;
 
     &__item {
@@ -24,5 +24,29 @@
     }
     &-play {
         @extend %play-gradient;
+    }
+    &-active {
+        @include position();
+    }
+}
+
+@media (max-width: 900px) {
+    .navigation {
+        @include box-size(100%, 320px);
+        font-size: 2rem;  
+        &__list {
+            width: 60%;
+            margin-top: 150px;
+        }
+    }
+}
+@media (max-width: 375px) {
+    .navigation {
+        @include box-size(100%, 100%);
+        font-size: 2rem;  
+        &__list {
+            width: 60%;
+            margin-top: 150px;
+        }
     }
 }
