@@ -187,6 +187,9 @@ body {
 .word-cards__item {
   height: 250px;
   width: 300px;
+  position: relative;
+  top: 0;
+  left: 0;
   margin: 20px;
 }
 
@@ -200,11 +203,8 @@ body {
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 3px;
-  transition: box-shadow 0.3s ease;
   text-align: center;
-  /*& + &-translate {
-
-  }*/
+  transition: box-shadow 0.3s ease;
 }
 .word-card:hover {
   box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
@@ -220,7 +220,7 @@ body {
   display: inline-block;
   margin-top: 12px;
 }
-.word-card__reverse {
+.word-card__rotate {
   height: 45px;
   width: 45px;
   position: absolute;
@@ -228,12 +228,27 @@ body {
   right: 3px;
   object-fit: cover;
 }
+.word-card-english {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.6s linear;
+  backface-visibility: hidden;
+}
+.word-card-russian {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.6s ease;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
 
 .word-card-play .word-card__image {
   height: 100%;
   width: 100%;
 }
-.word-card-play .word-card__reverse {
+.word-card-play .word-card__rotate {
   display: none;
 }
 
@@ -265,6 +280,17 @@ body {
     width: 35px;
   }
 }
+/*
+#cards:target {
+    position: absolute;
+    top: 80px;
+    width: inherit;
+    background-color: #ffffff;
+}
+
+#cards:not(:target) {
+    display: none;
+}*/
 .navigation {
   position: absolute;
   top: 0;
