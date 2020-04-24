@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
     <title>English for kids</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
@@ -21,12 +22,12 @@
                     <li class="navigation__item active"><a href="#">Main Page</a></li>
                     <li class="navigation__item"><a href="#/cards">Action (set A)</a></li>
                     <li class="navigation__item"><a href="#/cards">Action (set B)</a></li>
-                    <li class="navigation__item"><a href="#/cards">Weather</a></li>
-                    <li class="navigation__item"><a href="#/cards">Food</a></li>
                     <li class="navigation__item"><a href="#/cards">Animal (set A)</a></li>
                     <li class="navigation__item"><a href="#/cards">Animal (set B)</a></li>
                     <li class="navigation__item"><a href="#/cards">Clothes</a></li>
                     <li class="navigation__item"><a href="#/cards">Emotions</a></li>
+                    <li class="navigation__item"><a href="#/cards">Food</a></li>
+                    <li class="navigation__item"><a href="#/cards">Weather</a></li>
                 </ul>
             </nav>
             <label class="switch ">
@@ -37,60 +38,50 @@
         </header>
         
         <div class="cards-layout main-cards ">
-            <a href="#/cards" class="main-card">
-                <img src="laugh.jpg" alt="" class="main-card__image">
+            <a href="#cards" class="main-card">
+                <img src="assets/img/jump.jpg" alt="" class="main-card__image">
                 Action (set A)
             </a>
             <a href="#/cards" class="main-card">
-                <img src="laugh.jpg" alt="" class="main-card__image">
+                <img src="assets/img/sing.jpg" alt="" class="main-card__image">
                 Action (set B)
             </a>
             <a href="#/cards" class="main-card">
-                <img src="laugh.jpg" alt="" class="main-card__image">
+                <img src="assets/img/horse.jpg" alt="" class="main-card__image">
                 Animal (set A)
             </a>
             <a href="#/cards" class="main-card">
-                <img src="laugh.jpg" alt="" class="main-card__image">
+                <img src="assets/img/bird.jpg" alt="" class="main-card__image">
                 Animal (set B)
             </a>
             <a href="#/cards" class="main-card">
-                <img src="laugh.jpg" alt="" class="main-card__image">
+                <img src="assets/img/blouse.jpg" alt="" class="main-card__image">
                 Clothes
             </a>
             <a href="#/cards" class="main-card">
-                <img src="laugh.jpg" alt="" class="main-card__image">
+                <img src="assets/img/laugh.jpg" alt="" class="main-card__image">
                 Emotions
             </a>
             <a href="#/cards" class="main-card">
-                <img src="laugh.jpg" alt="" class="main-card__image">
+                <img src="assets/img/milk.jpg" alt="" class="main-card__image">
                 Food
             </a>
             <a href="#/cards" class="main-card">
-                <img src="laugh.jpg" alt="" class="main-card__image">
+                <img src="assets/img/rain.jpg" alt="" class="main-card__image">
                 Weather
             </a>
         </div>
-
-
-        <div class="cards-layout word-cards hiddn">
-            <div class="word-cards__item">
-                <div class="word-card word-card-play">
-                    <img src="laugh.jpg" alt="" class="word-card__image">
-                    <p class="word-card__header">water</p> 
-                    <img src="laugh.jpg" alt="" class="word-card__reverse">
-                </div>
-                <div class="word-card word-card-translate hidden">
-                    <img src="laugh.jpg" alt="" class="word-card__image">
-                    <p class="word-card__header">вода</p> 
-                </div>
-            </div>
-        </div>
- 
     </div>
+    <audio src="" id="audio"></audio>
 
     <script src="js/variables.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/switch.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/moving.js"></script>
+    <script src="js/cardEvents.js"></script>
+
     
 </body>
 </html>
