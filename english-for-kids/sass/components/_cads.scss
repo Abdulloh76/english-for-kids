@@ -25,6 +25,7 @@
 
 .word-cards__item {
     @include box-size(250px, 300px);
+    @include position($position: relative);
     margin: 20px;
 }
 .word-card {
@@ -34,8 +35,8 @@
     box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
     overflow: hidden;
     border-radius: 3px;
-    transition: box-shadow 0.3s ease;
     text-align: center;
+    transition: box-shadow 0.3s ease;
     
     &:hover {
         box-shadow: 1px 1px 30px rgba(0,0,0,0.5);
@@ -51,22 +52,31 @@
         display: inline-block;
         margin-top: 12px;
     }
-    &__reverse {
+    &__rotate {
         @include box-size(45px, 45px);
         position: absolute;
         bottom: 3px;
         right: 3px;
         object-fit: cover;
     }
-    /*& + &-translate {
-        
-    }*/
+    &-english {
+        @include position();
+        transition: transform 0.6s linear;
+        backface-visibility: hidden;
+    }
+    &-russian {
+        @include position();
+        transition: all 0.6s ease;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+    }
+
 }
 .word-card-play {
     .word-card__image {
         @include box-size(100%, 100%);
     }
-    .word-card__reverse {
+    .word-card__rotate {
         display: none;
     }
 }
@@ -96,3 +106,15 @@
     }
 }
 
+
+/*
+#cards:target {
+    position: absolute;
+    top: 80px;
+    width: inherit;
+    background-color: #ffffff;
+}
+
+#cards:not(:target) {
+    display: none;
+}*/
